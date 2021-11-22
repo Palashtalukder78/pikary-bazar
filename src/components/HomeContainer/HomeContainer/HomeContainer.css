@@ -1,0 +1,46 @@
+.home-banner{
+    background-image: url('../../../images/banner3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+.menu {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 5, 68);
+  }
+.menu:hover{
+    color: rgb(0, 82, 4);
+}
+  .menu::before, .menu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #14006d;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .menu::before {
+    top: 0;
+    transform-origin: center right;
+  }
+  
+  .menu:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+  }
+  
+  .menu::after {
+    bottom: 0;
+    transform-origin: center left;
+  }
+  
+  .menu:hover::after {
+    transform-origin: center right;
+    transform: scaleX(1);
+  }

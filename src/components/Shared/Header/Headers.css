@@ -1,0 +1,62 @@
+.main-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-photo{
+  margin-left: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgb(69, 86, 163);
+}
+.menu{
+  margin-left: 25px;
+}
+.login-btn {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%) !important;
+  }
+  .login-btn{
+      margin-left: 25px;
+      background-color: rgb(47, 0, 80);
+      color: #fff;
+  }
+  .logout-btn{
+    margin-left: 10px;
+    background-color: rgb(47, 0, 80) !important;
+    color: #fff !important;
+  }
+  .login-btn{
+      color: #ffffff !important;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  
+  .my-btn::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid hsl(236, 32%, 26%);
+    transform-origin: center;
+    transform: scale(1);
+  }
+  
+  .my-btn:hover::before {
+    transition: all 0.75s ease-in-out;
+    transform-origin: center;
+    transform: scale(1.75);
+    opacity: 0;
+  }

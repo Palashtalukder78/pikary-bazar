@@ -1,0 +1,36 @@
+.dashboard-header{
+    background-color: rgb(2, 7, 39) ;
+}
+.side-menu{
+    text-decoration: none;
+    color: #F63E7B;
+    font-weight: 600;
+}
+.side-menu:hover{
+    color: black ;
+}
+.dashboard-header-flexible h6{
+    display: block;
+}
+.dashboard-logout{
+    color: #F63E7B;
+    font-weight: 600;
+}
+main {
+    width: 100%;
+  }
+
+  .side-bar{
+      background-color: rgb(2, 7, 39);
+      height: 100%;
+      color: #ffffff;
+  }
+  .side-icon{
+    color: ivory;
+  }
+.side-menu{
+    color: #ddc8c8;
+}
+.side-menu:hover{
+    color: #ffffff;
+}

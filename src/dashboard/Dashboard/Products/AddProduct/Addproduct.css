@@ -1,0 +1,19 @@
+.add-product-form input{
+    margin-bottom: 15px;
+}
+.add-product-form select{
+    margin-bottom: 15px;
+}
+.add-product-form textarea{
+    margin-bottom: 15px;
+}
+.product-price{
+    border: 1px solid rgb(233, 225, 225);
+    padding: 5px;
+    border-radius: 5px;
+}
+.add-product-btn{
+    background-color: rgb(47, 0, 80) !important;
+    color: #fff !important;
+    margin: 15px 0;
+}

@@ -1,0 +1,57 @@
+.category-form{
+    background-color: rgba(228, 236, 238, 0.568);
+    padding: 20px;
+}
+.category-field{
+    width: 100%;
+    margin: 25px 0;
+}
+.category-photo-table{
+  width: 50px;
+  border-radius: 10px;
+  border: 2px solid rgb(12, 0, 65);
+}
+.delete_btn{
+  cursor: pointer;
+}
+.trash_icon{
+  font-size: 30px;
+  background-color: rgb(12, 0, 65);
+  border-radius: 50%;
+  color: #ffffff;
+  padding: 2px;
+}
+.dots {
+    width: 3.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .dots div {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #000547;
+    animation: fade 0.8s ease-in-out alternate infinite;
+  }
+  
+  .dots div:nth-of-type(1) {
+    animation-delay: -0.4s;
+  }
+  
+  .dots div:nth-of-type(2) {
+    animation-delay: -0.2s;
+  }
+  
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+  
