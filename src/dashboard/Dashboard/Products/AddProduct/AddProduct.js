@@ -39,7 +39,7 @@ const AddProduct = () => {
         formData.append('offerPrice', offerPrice);
         formData.append('image', image);
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://safe-retreat-38415.herokuapp.com/products', {
             method: "POST",
             body: formData
         })

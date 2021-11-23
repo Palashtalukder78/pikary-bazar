@@ -28,7 +28,7 @@ const AddCategories = () => {
         formData.append('email', email);
         formData.append('image', image);
 
-        fetch('http://localhost:5000/categories', {
+        fetch('https://safe-retreat-38415.herokuapp.com/categories', {
             method: "POST",
             body: formData
         })

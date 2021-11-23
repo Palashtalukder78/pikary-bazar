@@ -12,7 +12,7 @@ const AllCategoriesTable = () => {
         swal("Do you sure to Shiped this order ?")
             .then((value) => {
                 if (value) {
-                    const url = `http://localhost:5000/categories/${id}`
+                    const url = `https://safe-retreat-38415.herokuapp.com/categories/${id}`
                     fetch(url, {
                         method: "DELETE"
                     })

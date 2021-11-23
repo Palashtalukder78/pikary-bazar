@@ -3,6 +3,7 @@ import useAuth from '../../../hooks/useAuth';
 import Header from '../../Shared/Header/Header';
 import ProductCategory from '../ProductCategory/ProductCategory';
 import Products from '../ProductContainer/Products/Products';
+import ShoeContainer from '../ShoeContainer/ShoeContainer';
 import './HomeContainer.css'
 const HomeContainer = () => {
     const { allFirebase, allCategory, allProduct } = useAuth();
@@ -39,6 +40,7 @@ const HomeContainer = () => {
                     </div>
                     <ProductCategory></ProductCategory>
                     <Products></Products>
+                    <ShoeContainer></ShoeContainer>
                 </div>
             }
         </>
