@@ -4,11 +4,14 @@ import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Headers.css';
 import { useNavigate } from 'react-router';
+import Badge from '@mui/material/Badge';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const Header = () => {
     const { allFirebase } = useAuth();
     const { user, logout } = allFirebase;
     const navigate = useNavigate();
-
+    const { allCart } = useAuth();
+    const [carts] = allCart;
     const handleLogout = () => {
         logout(navigate)
     }
@@ -30,6 +33,14 @@ const Header = () => {
                             to="/explore"
                         >
                             Explore
+                        </NavLink>
+                        <NavLink
+                            className="menu"
+                            to="/carts"
+                        >
+                            <Badge badgeContent={carts?.length} color="primary">
+                                <ShoppingCartIcon color="action" />
+                            </Badge>
                         </NavLink>
                         {user.email &&
                             <NavLink

@@ -10,6 +10,7 @@ import DashboardHome from './dashboard/DashboardHome/DashboardHome';
 import AddCategories from './dashboard/Dashboard/AddCategories/AddCategories';
 import Products from './dashboard/Dashboard/Products/Products/Products';
 import AddProduct from './dashboard/Dashboard/Products/AddProduct/AddProduct';
+import Carts from './components/Carts/Carts';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path='/dashboard/add-product' element={<AddProduct></AddProduct>} />
           </Route>
           {/* Dashboard Route start*/}
+          <Route path="/carts" element={<Carts />} />
         </Routes>
       </Router>
     </AuthProvider>
